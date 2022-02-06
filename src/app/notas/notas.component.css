@@ -1,0 +1,47 @@
+#notas ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    background-color: #ffe798;
+}
+
+#notas li {
+    list-style: none;
+    text-align: left;
+}
+
+#botonera {
+    display: flex;
+    align-content: center;
+}
+
+.completada {
+    color: red;
+    text-decoration: line-through;
+}
+
+.normal {
+    color: black;
+}
+
+button {
+    margin: 1rem;
+    width: 7rem;
+    align-self: center;
+}
+
+#footer2 {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+#footer2>p {
+    margin-left: 1rem;
+    color: white;
+}
+
+#footer2 button {
+    margin-left: 5rem;
+}

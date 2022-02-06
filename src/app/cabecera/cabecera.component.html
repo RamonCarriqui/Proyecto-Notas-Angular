@@ -1,0 +1,20 @@
+<div id="cabecera">
+    <h1>TODO WEB APP</h1>
+
+    <label for="tarea">Crea tu nueva tarea </label>
+    <input type="text" [(ngModel)]="nombre" (keyup.enter)="agregar()" name="tarea" />
+
+    <label for="descripcion"> Descripción </label>
+    <input type="text" [(ngModel)]="descripcion" (keyup.enter)="agregar()" name="descripcion" />
+
+    <label for="prioridad">Prioridad</label>
+    <select (keyup.enter)="agregar()" [(ngModel)]="prioridad" name="prioridad" id="prioridad">
+        <option value="1">1(Alta)</option>
+        <option value="2">2(Media)</option>
+        <option value="3">3(Baja)</option>
+    </select>
+
+    <button [disabled]="prioridad == '' || nombre == '' || descripcion == ''" (click)="agregar()">
+        Añadir tarea
+    </button>
+</div>

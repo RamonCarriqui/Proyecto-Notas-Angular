@@ -1,0 +1,24 @@
+#cabecera {
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../../assets/cabecera.png");
+    margin-top: 0;
+    height: 15rem;
+}
+
+#cabecera input {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#cabecera select {
+    margin-left: 47%;
+    margin-right: 47%;
+}
+
+#cabecera button {
+    width: 7rem;
+    margin-top: 1rem;
+    align-self: center;
+}
